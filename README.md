@@ -1,5 +1,7 @@
 # zeroshotdemo
 
+This demos is currently running here: https://cogcomp.seas.upenn.edu/page/demo_view/ZeroShotTextClassification
+
 New Step 1: copy all pretrained entailment models from /shared folder.
 
 $ cp -r /shared/jinruiy/0shot/BenchmarkingZeroShot/models/demo_models  <the path of FOLDER you wanna save pretrained models>
