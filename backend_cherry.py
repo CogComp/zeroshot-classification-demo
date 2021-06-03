@@ -32,8 +32,20 @@ ESA_word2id = load_ESA_word2id(args.ZEROSHOT_RESOURCES)
 class StringPredicter(object):
     @cherrypy.expose
     def index(self):
-
         return open('public/0shot.html')
+
+    @cherrypy.expose
+    @cherrypy.tools.json_out()
+    @cherrypy.tools.json_in()
+    def info(self, **params):
+        return {"status":"online"}
+
+    @cherrypy.expose
+    # @cherrypy.tools.json_out()
+    # @cherrypy.tools.json_in()
+    def halt(self, **params):
+        # quit()
+        cherrypy.engine.exit()
 
     @cherrypy.expose
     @cherrypy.tools.json_out()
