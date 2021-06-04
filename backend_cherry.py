@@ -124,6 +124,6 @@ if __name__ == '__main__':
     cherrypy.config.update(config)
     # cherrypy.config.update({'server.socket_port': 8081})  #match the port on dickens server
     cherrypy.config.update(
-        // {'server.socket_host': 'dickens.seas.upenn.edu', 'server.socket_port': 4007, 'cors.expose.on': True})
-         {'server.socket_host': 'dickens.seas.upenn.edu', 'server.socket_port': 4007, 'cors.expose.on': False})
+        # {'server.socket_host': 'dickens.seas.upenn.edu', 'server.socket_port': 4007, 'cors.expose.on': True})
+        {'server.socket_host': 'dickens.seas.upenn.edu', 'server.socket_port': 4007, 'cors.expose.on': False})
     cherrypy.quickstart(StringPredicter(), '/', conf)
